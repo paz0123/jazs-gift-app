@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Gift Finder App</title>
+    <style>
+        body {
+            font-family: 'Sono', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+		.Gift-App{
+		    max-width: 1800px;
+			max-height:1800px;
+            margin: 20px auto;
+            padding: 20px;
+            background:  #b2beb5;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		
+		}
+		h1{
+		   background-color: grey;
+            color: white;
+            padding: 20px;
+            text-align: center;
+		}
+		h1 span{
+		  color:blue;
+		  font-size:30px;
+		  font-family:'Sono', sans-serif;
+		  font-weight:bold;
+		 
+		 }
+        
+		pre{
+		 color:black;
+		 font-family: 'Sono', sans-serif;
+         text-align: center;
+		 font-size:20px;
+		 font-weight:bold;
+		}
+		h2{
+		  background-color:white;
+		  color:blue;
+		  font-size:30px;
+		  font-weight:bold;
+		}
+        button {
+            background-color: #FF9900;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #CC7A00;
+        }
+    </style>
+</head>
+<body>
+ <div class="Gift-App">
+    <h1><span>Jazs Gift</span> Finder App</h1>
+	<img src="gift.jpg" alt="love it all"/>
+    <pre>Looking for the perfect gift? Let us help! in the link below there are a lot 
+	     of  amazing offers and options that you will love all from Amazon inclunding  gift
+         cards  that you can exchange to cash.
+	     Jazs Gift Finder App has made your search easy to get any kind of gift you looking
+	     for in a second </pre>
+		 <img src="gift5.jpg" alt="something for all"/> <img src="25+.jpg" alt="lovely gift"/>
+	<h2> click on the button below</h2>
+    <button id="findGiftButton">Find Gifts</button>
+	
+</div>
+    <script>
+        // Redirect users to Amazon's gift card page when they click "Find Gifts"
+        const findGiftButton = document.getElementById('findGiftButton');
+        findGiftButton.addEventListener('click', () => {
+            // Replace this with your Amazon affiliate link
+            const amazonGiftCardLink = "https://www.amazon.com/gift-cards";
+            window.location.href = amazonGiftCardLink;
+        });
+    </script>
+</body>
+</html>
